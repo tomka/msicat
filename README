@@ -2,14 +2,15 @@ msicat
 ======
 
 Msicat prints most of the available Windows MSI registry information.
-It allows you to declare two different filters to reduce the reslut
-size. The progrim will ge through all MIS entries and if a filter is
-given it will only brint entries on which the filter matches. An entry
+It allows you to declare two different filters to reduce the result
+size. The progrim will go through all MIS entries and if a filter is
+given it will only print entries on which the filter matches. An entry
 consists of a number of attributes with correspoding attribute-values.
 The filters are checked against them. To be in the result set on entry
 needs at least one match.
 
 Tom Kazimiers <tom _at_ voodoo-arts.net>
+
 
 Usage
 -----
@@ -18,10 +19,9 @@ Synopsis: msicat [ attribute=value | attribute==value ]
 
 If you specify no filter all the MSI entries get listed. The "=" filter
 is not strict about the velue. The valua needs only to be part of the
-attribute-vaue of the real entry. With "==" you will get strict results.
+attribute-value of the real entry. With "==" you will get strict results.
 Only if the value equals the attribute-value of the current entry it will
 yield true.
-
 
 
 License
@@ -30,5 +30,5 @@ License
 All the code is MIT licenced and you could do whatever you want with that
 code. Some of the MSI related code was found by me on the web and
 unfortunately, I don't seem to find it anymore. The source web site does
-not seem to exst anymore. In the near future I will rewrite this part
+not seem to exst anymore, but in the near future I will rewrite this part
 anyway.
